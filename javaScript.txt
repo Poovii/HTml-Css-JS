@@ -1,0 +1,80 @@
+console.log(document.getElementById('my-form'));
+VM2831:1 <form id=?"my-form">?…?</form>?
+undefined
+console.log(document.querySelector('container'));
+VM2856:1 null
+undefined
+console.log(document.querySelector('h1'));
+VM2880:1 <h1>?JS For Beginners?</h1>?
+undefined
+const btn= document.querySelector('btn');
+undefined
+btn.style.background='blue';
+VM2929:1 Uncaught TypeError: Cannot read properties of null (reading 'style')
+    at <anonymous>:1:5
+(anonymous) @ VM2929:1
+console.log(document.querySelector('h1'));
+VM2957:1 <h1>?JS For Beginners?</h1>?
+undefined
+console.log(document.querySelector('.container'));
+VM2987:1 <section class=?"container">?…?</section>?
+undefined
+const btn= document.querySelector('btn');
+undefined
+btn.style.background='blue';
+VM3040:1 Uncaught TypeError: Cannot read properties of null (reading 'style')
+    at <anonymous>:1:5
+(anonymous) @ VM3040:1
+const btn= document.querySelector('.btn');
+undefined
+btn.style.background='blue';
+'blue'
+btn.style.background='yellow';
+'yellow'
+btn.style.background='black';
+'black'
+console.log(document.getElementById('my-form'));
+console.log(document.getElementById('h1'));
+console.log(document.getElementById('.container'));
+
+VM700:1 <form id=?"my-form">?…?</form>?
+VM700:2 null
+VM700:3 null
+undefined
+const btn= document.querySelector('.btn');
+undefined
+btn.addEventListener('click',event)
+undefined
+{
+    console.log('click');
+    e.preventDefault();
+}
+VM939:2 click
+VM939:3 Uncaught ReferenceError: e is not defined
+    at <anonymous>:3:5
+(anonymous) @ VM939:3
+{
+    console.log('click');
+    event.preventDefault();
+};
+VM960:2 click
+VM960:3 Uncaught TypeError: Cannot read properties of undefined (reading 'preventDefault')
+    at <anonymous>:3:11
+(anonymous) @ VM960:3
+btn.addEventListener('click',(external)=>
+    {
+        console.log('click');
+        external.preventDefault();
+    });
+undefined
+48VM1271:3 click
+const nameInput=document.querySelector('#name');
+undefined
+nameInput.addEventListener('input',(external)=>
+    {
+        doucument.querySelector('.container').append(nameInput.value)});
+undefined
+VM1779:3 Uncaught ReferenceError: doucument is not defined
+    at HTMLInputElement.<anonymous> (<anonymous>:3:9)
+(anonymous) @ VM1779:3
+12VM1271:3 click
